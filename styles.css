@@ -1,35 +1,95 @@
 /* Homepage */
 
+html {
+    box-sizing: border-box;
+}
+  
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
 * {
     font-family: "Courier New", Verdana, sans-serif;
 }
 
 .headline {
-    color: rgb(18, 106, 106);
+    text-align: center;
+    color: white;
+    background-color: black;
 }
 
 .doner,
 .pizza,
 .bolognese {
+    display: inline-block;
+    padding: 3px;
+    
     font-size: 22px;
     font-weight: bold;
+    text-align: center;
+
+}
+
+.donerimg,
+.pizzaimg,
+.bologneseimg {
+    display: inline-block;
+    width: 400px;
+    margin-top: 80px;
+
 }
 
 .doner {
+    width: 152px;
+    position: absolute;
+    left: 25%;
+    transform: translateX(-75%);
     color: rgb(50, 19, 19);
     background-color: bisque;
 }
 
+.donerimg {
+    display: inline-block;
+    position: absolute;
+    left: 25%;
+    transform: translateX(-75%);
+}
+
 .pizza {
+    width: 218px;
+    /* margin-left: 595.5px; */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    /* margin-right: 748.5px; */
     color: green;
     background-color: rgba(215, 65, 65, 0.554);
 }
 
+.pizzaimg {
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 .bolognese {
+    width: 257px;
+    position: absolute;
+    left: 75%;
+    transform: translateX(-25%);
     color: red;
     background-color: blanchedalmond;
 }
 
+.bologneseimg {
+    display: inline-block;
+    position: absolute;
+    left: 75%;
+    transform: translateX(-25%);
+}
 
 /* recipe pages */
 
